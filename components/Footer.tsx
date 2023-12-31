@@ -14,9 +14,9 @@ const Footer = () => {
 
 
              <div className="mt-2 mx-0 mb-24 justify-center flex">
-                <Link to="#" className="py-0 px-8 hover:text-gray-200">Home</Link>
-                <Link to="#" className="py-0 px-8 no-cursor hover:text-gray-200">Features</Link>
-                <Link to="#" className="py-0 px-8 hover:text-gray-200">Download</Link>
+                <a  className="py-0 px-8 hover:text-gray-200 cursor-pointer">Home</a>
+                <a  className="py-0 px-8 no-cursor hover:text-gray-200 cursor-pointer">Features</a>
+                <a  className="py-0 px-8 hover:text-gray-200 cursor-pointer">Download</a>
 
             </div>
       <div className="container mx-auto text-center">

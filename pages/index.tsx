@@ -10,12 +10,10 @@ import { BrowserRouter } from "react-router-dom"
 export default function Home() {
   return (
     <>
-      <BrowserRouter>
 
      <Navbar />
      <LandingPage /> 
      <Footer />
-     </BrowserRouter>
     </>
   )
 }
