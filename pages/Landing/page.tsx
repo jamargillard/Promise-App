@@ -16,16 +16,16 @@ const RevealOnScroll = ({ children, ...props } :any ) => {
     const [isVisible, setIsVisible] = useState(false);
 
     const ref = useRef(null);
- 
     useEffect(() => {
-        const scrollObserver = new IntersectionObserver(([entry]) => {
-            if (entry.isIntersecting) {
-                setIsVisible(true);
-                scrollObserver.unobserve(entry.target);
-            }
-        });
- 
-        scrollObserver.observe(ref.current);
+      const scrollObserver = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          scrollObserver.unobserve(entry.target);
+        }
+      });
+      
+      if (ref.current === null)return
+      scrollObserver.observe(ref.current);
  
         return () => {
             if (ref.current) {
@@ -100,7 +100,7 @@ export default function LandingPage(){
       <div className="container mx-auto flex justify-between items-center">
 <Link href=''>
 <div className="flex space-x-4 ">
-<span></span>
+
 <FaInstagram className=
 " hover:text-zinc-600 cursor-not-allowed" 
 />       
