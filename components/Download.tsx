@@ -4,6 +4,25 @@ import { FaAppStoreIos } from 'react-icons/fa';
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const Download = () => {
   return (
     <div className=" bg-gradient-to-b from-sky-200 text-zinc-900 p-4 pb-8 ">
@@ -21,14 +40,14 @@ Download Now
 
           <a
           
-          href="#"
+          href="https://apps.apple.com/us/app/promise-your-haven-for-peace/id1636399289"
             className="text-blue-500 hover:animate-none animate-pulse transition-all hover:text-blue-600 py-2 px-4 rounded-md font-xl"
             
           >
             <FaAppStoreIos size={80} />
           </a>
           <a
-            href="#"
+            href="https://play.google.com/store/apps/details?id=com.promiseapp.promise&hl=en_US&gl=US"
             className="text-green-500  hover:animate-none animate-pulse hover:text-green-600  py-2 px-4 rounded-md"
           >
         <IoLogoGooglePlaystore size={80} />          </a>

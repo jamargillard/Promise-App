@@ -10,6 +10,7 @@ import { Button } from "./ui/button";
 export const Navbar = () => {
 
   
+  
     return (
       <>
       <div className="items-center relative h-10 w-full mr-4  bg-gradient-to-b from-sky-100 to-sky-200 flex  ">
@@ -17,9 +18,9 @@ export const Navbar = () => {
 <Link href=''>
 <div className="flex space-x-4 ">
 
-<FaInstagram className=" hover:text-zinc-600" />       
-<FaXTwitter className=" hover:text-zinc-600" />
-<FaFacebookF className=" hover:text-zinc-600" />
+<FaInstagram className=" hover:text-zinc-600  cursor-not-allowed" />       
+<FaXTwitter className=" hover:text-zinc-600 cursor-not-allowed" />
+<FaFacebookF className=" hover:text-zinc-600 cursor-not-allowed" />
  </div>
         </Link>
         <span className="text-xs "> Newest Update: v1.09.2</span>
@@ -43,11 +44,11 @@ export const Navbar = () => {
           <Button className="  hover:bg-zinc-700 rounded-full text-zinc-900">
             Home 
           </Button>
-          <Button className="  hover:bg-zinc-700 rounded-full text-zinc-900">
+          <Button  className="  hover:bg-zinc-700 rounded-full text-zinc-900">
             Features
           </Button>
           <Button className="  hover:bg-zinc-700 rounded-full text-zinc-900">
-            About Us
+            Download
           </Button>
         </Link>
       </div>
