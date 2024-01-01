@@ -12,8 +12,9 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button";
 
  
-const RevealOnScroll = ({ children }) => {
+const RevealOnScroll = ({ children, ...props } :any ) => {
     const [isVisible, setIsVisible] = useState(false);
+
     const ref = useRef(null);
  
     useEffect(() => {
@@ -99,8 +100,10 @@ export default function LandingPage(){
       <div className="container mx-auto flex justify-between items-center">
 <Link href=''>
 <div className="flex space-x-4 ">
-
-<FaInstagram className=" hover:text-zinc-600  cursor-not-allowed" />       
+<span></span>
+<FaInstagram className=
+" hover:text-zinc-600 cursor-not-allowed" 
+/>       
 <FaXTwitter className=" hover:text-zinc-600 cursor-not-allowed" />
 <FaFacebookF className=" hover:text-zinc-600 cursor-not-allowed" />
  </div>
